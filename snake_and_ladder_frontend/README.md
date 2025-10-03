@@ -1,82 +1,34 @@
-# Lightweight React Template for KAVIA
+# Snake & Ladder Frontend (React)
 
-This project provides a minimal React template with a clean, modern UI and minimal dependencies.
+Modern, responsive Snake and Ladder game built with React and the Ocean Professional theme.
 
 ## Features
+- Play vs Player (PvP) or vs Computer (PvC, Player 2 is the computer)
+- 2 to 4 players (default 2)
+- 10x10 zig-zag board with snakes and ladders markers
+- Exact roll required to land on 100
+- Move history (last 20)
+- Accessible controls and tokens
+- Modern UI with gradients, shadows, and smooth transitions
 
-- **Lightweight**: No heavy UI frameworks - uses only vanilla CSS and React
-- **Modern UI**: Clean, responsive design with KAVIA brand styling
-- **Fast**: Minimal dependencies for quick loading times
-- **Simple**: Easy to understand and modify
+## Run
+- npm start
+- Visit http://localhost:3000
 
-## Getting Started
+## Structure
+- src/App.jsx: App entry and layout (Header, GameBoard, Sidebar, Footer)
+- src/hooks/useSnakeLadderGame.js: Game logic and state
+- src/constants/board.js: Board helpers and snakes/ladders mapping
+- src/components/*: UI components
+- src/styles/theme.css: Theme variables and UI styles
 
-In the project directory, you can run:
+## Theme (Ocean Professional)
+- Primary: #2563EB
+- Secondary/Success: #F59E0B
+- Error: #EF4444
+- Background: #f9fafb
+- Surface: #ffffff
+- Text: #111827
+- Gradient: from-blue-500/10 to gray-50
 
-### `npm start`
-
-Runs the app in development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-### `npm test`
-
-Launches the test runner in interactive watch mode.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-## Customization
-
-### Colors
-
-The main brand colors are defined as CSS variables in `src/App.css`:
-
-```css
-:root {
-  --kavia-orange: #E87A41;
-  --kavia-dark: #1A1A1A;
-  --text-color: #ffffff;
-  --text-secondary: rgba(255, 255, 255, 0.7);
-  --border-color: rgba(255, 255, 255, 0.1);
-}
-```
-
-### Components
-
-This template uses pure HTML/CSS components instead of a UI framework. You can find component styles in `src/App.css`. 
-
-Common components include:
-- Buttons (`.btn`, `.btn-large`)
-- Container (`.container`)
-- Navigation (`.navbar`)
-- Typography (`.title`, `.subtitle`, `.description`)
-
-## Learn More
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Enjoy the game!
